@@ -1,0 +1,49 @@
+# MARK: - Xcode Specific
+*.xcuserstate
+*.xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# Workspace settings (shared OK, user-specific NO)
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# MARK: - Build Artifacts
+DerivedData/
+build/
+*.app
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# MARK: - Swift Package Manager
+.swiftpm/
+.build/
+.swiftpm/xcode/package.xcworkspace/
+
+# MARK: - CocoaPods
+Pods/
+*.lock
+
+# MARK: - Carthage
+Carthage/
+Carthage/Build/
+
+# MARK: - Fastlane
+fastlane/report.xml
+fastlane/test_output/
+fastlane/screenshots/
+
+# MARK: - Misc / macOS
+.DS_Store
+*.orig
+
+# MARK: - Xcode Preview Support
+.preview-thumbnails/
+
+# MARK: - Git Conflicts
+*.orig
+
+# MARK: - User-specific .env files (if used in CI/CD or local configs)
+.env
