@@ -1,9 +1,10 @@
-# MARK: - Xcode Specific
+# Xcode User Data (local machine-specific settings)
 *.xcuserstate
 *.xcuserdata/
 *.xccheckout
-*.moved-aside
-*.xcscmblueprint
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/**/*
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 
 # Workspace settings (shared OK, user-specific NO)
 *.xcworkspace/xcuserdata/
