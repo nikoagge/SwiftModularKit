@@ -35,6 +35,23 @@
 			);
 			target = 170C78AE2DAB9918000E0979 /* ToastKitDemoApp */;
 		};
+		178BBEA72DB3ADEC006A6803 /* Exceptions for "ToastKitTests" folder in "ToastKit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Managers/ToastManagerTests.swift,
+				ToastKitTests.swift,
+			);
+			target = 17FDC9AC2DAAABB3001473F0 /* ToastKit */;
+		};
+		178BBEA82DB3ADEC006A6803 /* Exceptions for "ToastKitTests" folder in "ToastKitTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/MockWindow.swift,
+				Managers/ToastManagerTests.swift,
+				ToastKitTests.swift,
+			);
+			target = 17FDC9CE2DAAB88B001473F0 /* ToastKitTests */;
+		};
 		17FDC9BF2DAAABB3001473F0 /* Exceptions for "ToastKit" folder in "ToastKit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
@@ -58,6 +75,15 @@
 			path = ToastKitDemoApp;
 			sourceTree = "<group>";
 		};
+		178BBEA42DB3ADEC006A6803 /* ToastKitTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				178BBEA72DB3ADEC006A6803 /* Exceptions for "ToastKitTests" folder in "ToastKit" target */,
+				178BBEA82DB3ADEC006A6803 /* Exceptions for "ToastKitTests" folder in "ToastKitTests" target */,
+			);
+			path = ToastKitTests;
+			sourceTree = "<group>";
+		};
 		17FDC9AF2DAAABB3001473F0 /* ToastKit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -67,11 +93,6 @@
 				Resources,
 			);
 			path = ToastKit;
-			sourceTree = "<group>";
-		};
-		17FDC9D02DAAB88B001473F0 /* ToastKitTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ToastKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -113,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				17FDC9AF2DAAABB3001473F0 /* ToastKit */,
-				17FDC9D02DAAB88B001473F0 /* ToastKitTests */,
+				178BBEA42DB3ADEC006A6803 /* ToastKitTests */,
 				170C78A32DAB7A2B000E0979 /* ToastKitUITests */,
 				170C78B02DAB9918000E0979 /* ToastKitDemoApp */,
 				17FDC9AE2DAAABB3001473F0 /* Products */,
@@ -202,6 +223,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				178BBEA42DB3ADEC006A6803 /* ToastKitTests */,
 				17FDC9AF2DAAABB3001473F0 /* ToastKit */,
 			);
 			name = ToastKit;
@@ -223,9 +245,6 @@
 			);
 			dependencies = (
 				17FDC9D52DAAB88B001473F0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				17FDC9D02DAAB88B001473F0 /* ToastKitTests */,
 			);
 			name = ToastKitTests;
 			packageProductDependencies = (
@@ -252,6 +271,7 @@
 					};
 					17FDC9AC2DAAABB3001473F0 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 					17FDC9CE2DAAB88B001473F0 = {
 						CreatedOnToolsVersion = 16.1;
@@ -443,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -467,6 +488,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
